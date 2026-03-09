@@ -182,20 +182,8 @@ print('Success:', result['success'])
 
 ## Deployed App
 
-🔗 **Live App**: [https://math-mentor.streamlit.app](https://math-mentor.streamlit.app)
-*(Deploy to Streamlit Cloud by connecting your GitHub repo)*
+🔗 **Live App**: [https://aiplanet-assignment-harsh-joshi.streamlit.app/](Link)
 
-### Deploy to Streamlit Cloud
-
-1. Push this repo to GitHub
-2. Go to [share.streamlit.io](https://share.streamlit.io)
-3. Connect your repo and select `app.py` as the main file
-4. Add `ANTHROPIC_API_KEY` in the Secrets section
-5. Click Deploy!
-
----
-
-## Agent System
 
 ### Parser Agent
 ```json
@@ -313,28 +301,3 @@ The memory system uses a JSON store that persists between sessions:
 | **Linear Algebra** | Matrices, determinants, inverse, systems of equations, vectors, eigenvalues |
 
 ---
-
-## Evaluation Summary
-
-| Component | Status | Notes |
-|-----------|--------|-------|
-| Text Input | ✅ Complete | With examples |
-| Image OCR | ✅ Complete | Claude Vision + EasyOCR + Tesseract |
-| Audio ASR | ✅ Complete | Whisper API + local |
-| Parser Agent | ✅ Complete | JSON output with all fields |
-| Intent Router | ✅ Complete | Strategy planning |
-| Solver Agent | ✅ Complete | RAG + correction rules |
-| Verifier Agent | ✅ Complete | Domain + edge case checks |
-| Explainer Agent | ✅ Complete | Step-by-step with pedagogy |
-| Guardrail Agent | ✅ Complete (bonus) | Input validation |
-| RAG Pipeline | ✅ Complete | FAISS + sentence-transformers |
-| HITL System | ✅ Complete | All 4 trigger conditions |
-| Memory Store | ✅ Complete | Persistent JSON + similarity search |
-| Streamlit UI | ✅ Complete | All required panels |
-| Agent Trace | ✅ Complete | Live execution trace |
-| Confidence Indicator | ✅ Complete | Visual bar + badge |
-| Feedback Buttons | ✅ Complete | Correct / Incorrect + comment |
-
----
-
-*Built for AI Planet AI Engineer Assignment*
