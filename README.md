@@ -151,38 +151,17 @@ cp .env.example .env
 ## Running Locally
 
 ```bash
-# Make sure you're in the project directory with venv activated
+
 streamlit run app.py
 
-# The app will open at http://localhost:8501
 ```
 
-### Quick Test
-
-```bash
-# Run a quick functionality test
-python -c "
-from agents.orchestrator import MathMentorOrchestrator
-from rag.pipeline import MathRAGPipeline
-from memory.store import MathMemory
-import os
-os.environ['ANTHROPIC_API_KEY'] = 'your-key-here'
-
-rag = MathRAGPipeline(knowledge_base_path='./knowledge_base')
-rag.build_index()
-mem = MathMemory()
-orch = MathMentorOrchestrator(rag, mem)
-result = orch.process('Solve: x^2 - 5x + 6 = 0')
-print('Answer:', result['answer'])
-print('Success:', result['success'])
-"
-```
 
 ---
 
 ## Deployed App
 
-🔗 **Live App**: [https://aiplanet-assignment-harsh-joshi.streamlit.app/](Link)
+🔗 **Live App**: [https://aiplanet-assignment-harsh-joshi.streamlit.app/](https://aiplanet-assignment-harsh-joshi.streamlit.app/)
 
 
 ### Parser Agent
